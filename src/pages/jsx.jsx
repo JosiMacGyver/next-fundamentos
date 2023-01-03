@@ -1,3 +1,5 @@
+import Layout from "../components/Layout"
+
 export default function Jsx() {
     const a = 4
     const b = 3
@@ -9,11 +11,13 @@ export default function Jsx() {
     }
 
     //para adicionar trechos js em jsx, é necessário um par de {}
-    return(
-        <div>
-            {titulo}
-            {subtitulo()}
-            {a*b}
-        </div>
+    return (
+        <Layout titulo="Entendendo o JSX">
+            <div>
+                {titulo}
+                {subtitulo()}
+                {a * b}
+            </div>
+        </Layout> 
     )
 }
